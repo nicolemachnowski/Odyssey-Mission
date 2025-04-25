@@ -1,0 +1,51 @@
+<!--Coding assisted by online databases as well as ChatGPT for proofreading-->
+
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Odyssey Mission - Archives</title>
+    <link rel="stylesheet" href="page7.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.typekit.net/wll3xcm.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Enter the Password<h1>
+    </div>
+
+    <div class="password-box">
+        <input type="password" id="passwordInput" placeholder="Password">
+        <br>
+        <button class="button" onclick="checkPassword()">Enter</button>
+        <div class="error" id="errorMsg">Incorrect password</div>
+      </div>
+      
+      <script>
+        function checkPassword() {
+          const password = document.getElementById('passwordInput').value;
+          const correctPassword = 'Evie'; // 🔐 Set your password here
+          const errorMsg = document.getElementById('errorMsg');
+      
+          if (password === correctPassword) {
+            window.location.href = 'page8.html'; // 🔁 Redirect if correct
+          } else {
+            errorMsg.style.display = 'block'; // Show error
+          }
+        }
+      </script>
+      
+
+</body>
+
+</html>

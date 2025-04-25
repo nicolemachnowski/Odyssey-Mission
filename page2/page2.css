@@ -1,0 +1,82 @@
+body {
+    height: vh;
+    width: vw;
+    background-color: #1b1b1c;
+  }
+
+  .header {
+    font-family: "area-normal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 18pt;
+    font-variation-settings:
+      "wdth" 100;
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 7%;
+    color: white;
+  }
+
+  
+.two-column {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.image-container {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    flex: 1;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-size: 12pt;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 
+        "wdth" 100;
+    color: white;
+}
+
+img {
+    width: 45%;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+   
+}
+
+img:hover {
+   box-shadow: 0 0 10px 10px #9885c7;
+}
+
+
+
+
+
+.text-container {
+    flex: 1;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-size: 12pt;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: 
+        "wdth" 100;
+    text-align: left;
+    padding-left: 7%;
+    padding-right: 5%;
+    color: white;
+}
+
+.night a, .night a:visited{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  transition: color 0.5s ease;
+}
+
+.night a:hover {
+  color: #9885c7;
+
+}

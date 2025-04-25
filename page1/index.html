@@ -1,0 +1,80 @@
+<!--Coding assisted by online databases as well as ChatGPT for proofreading-->
+
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Odyssey Mission - Archives</title>
+    <link rel="stylesheet" href="page1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.typekit.net/wll3xcm.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Warning - Clearance for Authorized Personnel Only<h1>
+    </div>
+    <div class="disclaimer">
+        <p>You are currently accessing a secured database, if you are not an authorized user, please navigate away from
+            this site.</p>
+
+        <p><span class="bold">Authorized Personnel -</span> please enter your security code now:</p>
+    </div>
+
+    <div class="password-section">
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+
+    <div id="hidden-content" class="hidden">
+
+    <h2>AUTHORIZATION GRANTED</h2>
+        <p class="hidden-text"><span class="bold">All information on this site is strictly classified.</span></p>
+        <p class="hidden-text">All materials shown here are not to be disseminated amongst anyone without the proper clearance. The unauthorized reproduction or distribution of these classified materials is punishable by law.</p> 
+        <p class="hidden-text"><span class="bold">This will be your only warning.</span></span></p>
+
+        <h2>Do you wish to proceed?</h2>
+    <button class="button" onclick="navigateToPage('yes')">Yes</button>
+    <button class="button2" onclick="navigateToPage('no')">No</button>
+    </div>
+
+    <script>
+        // JavaScript to check the entered password
+        function checkPassword() {
+            const correctPassword = "GlenHope"; // You can change this to any password you want
+            const enteredPassword = document.getElementById("password").value;
+            const contentSection = document.getElementById("hidden-content");
+            const passwordSection = document.getElementById("password-section");
+
+            // Check if the password is correct
+            if (enteredPassword === correctPassword) {
+                // Reveal the content
+                contentSection.classList.remove("hidden");
+                passwordSection.style.display = "none"; // Hide the password form
+            } else {
+                alert("Invalid security code. Please try again.");
+            }
+        }
+
+        function navigateToPage(choice) {
+            if (choice === 'yes') {
+                window.location.href = "page2.html";  // Navigate to Page A
+            } else if (choice === 'no') {
+                window.location.href = "home.html";  // Navigate to Page B
+            }
+        }
+    </script>
+
+</body>
+
+</html>
