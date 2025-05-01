@@ -32,14 +32,18 @@ body {
     font-size: 16pt;
     font-weight: 500;
     margin-top: -5%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
     margin-bottom: 2%;
     font-style: normal;
     font-variation-settings: 
         "wdth" 100;
     text-align: center;
     color:  white;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
   }
 
   .button {
